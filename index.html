@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="banner" src="banner.jpeg" alt="banner cloud" />
+      <a href="#" class="logo">JM Soluxis</a>
+      <div class="toggle"></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Bla bla bla</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facere autem voluptate consectetur provident
+        repellendus necessitatibus odio, accusamus nesciunt amet iusto animi ducimus totam eaque perspiciatis, ipsam
+        similique facilis, nobis nostrum maiores omnis alias architecto. Magni placeat non pariatur eos obcaecati vero
+        consequatur eum minus facere rerum dignissimos, provident voluptates, impedit, qui labore quod libero mollitia?
+        Excepturi quos accusamus nobis!
+      </p>
+    </section>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+
+      const navigation = document.querySelector('nav');
+      document.querySelector('.toggle').onclick = function() {
+        this.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
